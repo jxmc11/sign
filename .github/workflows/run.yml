@@ -1,6 +1,8 @@
 name: 掘金签到
 
 on:
+  push:
+    branches: [ master ]
   schedule:
     - cron: 5 0,10,13 * * *
   watch:
