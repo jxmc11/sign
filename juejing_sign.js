@@ -17,10 +17,10 @@ if (process.env.suohaIndex) {
     suohaIndex = process.env.suohaIndex.split(',')
 }
 // 控制不执行签到脚本的时间 当前小时小于singTime则执行签到
-let signTime = 9
+let signTime = 17
 
 if (process.env.signTime) {
-    signTime = process.env.signTime || 9
+    signTime = process.env.signTime || 17
 }
 // 控制梭哈抽奖次数
 let suohaTimes = 2
