@@ -27,7 +27,7 @@ jobs:
           node juejing_sing_mi.js
 
         env:
-          juejinCookie: ${{ juejinCookie }}
-          suohaIndex: ${{ suohaIndex }}
-          signTime: ${{ signTime }}
-          suohaTimes: ${{ suohaTimes }}
+          juejinCookie: ${{ secrets.juejinCookie }}
+          suohaIndex: ${{ secrets.suohaIndex }}
+          signTime: ${{ secrets.signTime }}
+          suohaTimes: ${{ secrets.suohaTimes }}
