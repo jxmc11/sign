@@ -1,0 +1,31 @@
+name: 掘金签到
+
+on:
+  schedule:
+    - cron: 5 0,10,13 * * *
+  watch:
+    types: started
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 15.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15.x
+      - name: "开始"
+        run: |
+          npm install
+      - name: "执行签到等操作"
+        run: |
+          node juejing_sing_mi.js
+
+        env:
+          juejinCookie: ${{ juejinCookie }}
+          suohaIndex: ${{ suohaIndex }}
+          signTime: ${{ signTime }}
+          suohaTimes: ${{ suohaTimes }}
