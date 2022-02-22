@@ -24,7 +24,7 @@ jobs:
           npm install
       - name: "执行签到等操作"
         run: |
-          node juejing_sing_mi.js
+          node ./juejing_sign.js
 
         env:
           juejinCookie: ${{ secrets.juejinCookie }}
