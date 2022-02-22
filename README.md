@@ -10,6 +10,7 @@
 
 ### 二、添加掘金cookie等环境变量
 > 添加名为  **juejinCookie**、**suohaIndex**、**signTime**、**suohaTimes**的变量: Settings-->Secrets-->New secret  
+  或者你也可以直接写到代码上去，也是一样的效果
 
 | Secrets |  格式  |
 | -------- | ----- |
