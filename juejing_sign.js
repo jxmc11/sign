@@ -1,7 +1,7 @@
 
 // 转移矿石到第一个账号
 // 掘金ck;
-const juejinCookie = []
+let juejinCookie = []
 
 if (process.env.juejinCookie) {
     if (process.env.juejinCookie.indexOf('\n') > -1) {
@@ -12,18 +12,18 @@ if (process.env.juejinCookie) {
   }
 }
 // 控制几个账号开始梭哈抽奖，从1开始
-const suohaIndex = [100]
+let suohaIndex = [100]
 if (process.env.suohaIndex) {
     suohaIndex = process.env.suohaIndex.split(',')
 }
 // 控制不执行签到脚本的时间 当前小时小于singTime则执行签到
-const signTime = 9
+let signTime = 9
 
 if (process.env.signTime) {
     signTime = process.env.signTime || 9
 }
 // 控制梭哈抽奖次数
-const suohaTimes = 2
+let suohaTimes = 2
 if (process.env.suohaTimes) {
     suohaTimes = process.env.suohaTimes || 2
 }
