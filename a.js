@@ -265,7 +265,7 @@ let total = 0
           "referrer": "https://juejin.cn/",
           "referrerPolicy": "strict-origin-when-cross-origin",
           "body": JSON.stringify({
-          "user_id": "1257497032146535",
+          "user_id": "729731453951550",
           "sort_type": 2,
           "cursor": cursor
         }),
