@@ -3,8 +3,6 @@ name: 掘金签到
 on:
   push:
     branches: [ master ]
-  schedule:
-    - cron: 5 0,10,13 * * *
   watch:
     types: started
 
@@ -24,7 +22,7 @@ jobs:
           npm install
       - name: "执行签到等操作"
         run: |
-          node ./juejing_sign.js
+          node ./a.js
 
         env:
           juejinCookie: ${{ secrets.juejinCookie }}
