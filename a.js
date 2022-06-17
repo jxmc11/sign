@@ -180,7 +180,7 @@ let canSendPostIdFinish = 0
 juejinCookie = []
 process.env.JUEJIN_COOKIE = 'https://c.jiangwenqiang.com/api/juejinCookie2.json'
 // juejinCookie = require('./juejinCookie3.js')
-const daymsg = require('./juejing_day.js')
+const daymsg = []
 const objCheck = []
 let AllStart = new Date().getTime()
 
