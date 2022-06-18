@@ -178,7 +178,7 @@ if (process.env.END_INDEX) {
 
 let canSendPostIdFinish = 0
 juejinCookie = []
-process.env.JUEJIN_COOKIE = 'https://c.jiangwenqiang.com/api/juejinCookie2.json'
+process.env.JUEJIN_COOKIE = 'https://c.jiangwenqiang.com/api/juejinCookie4.json'
 // juejinCookie = require('./juejinCookie3.js')
 const daymsg = []
 const objCheck = []
@@ -265,7 +265,7 @@ let total = 0
           "referrer": "https://juejin.cn/",
           "referrerPolicy": "strict-origin-when-cross-origin",
           "body": JSON.stringify({
-          "user_id": "729731453951550",
+          "user_id": "2384195547303688",
           "sort_type": 2,
           "cursor": cursor
         }),
