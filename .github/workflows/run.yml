@@ -20,7 +20,7 @@ jobs:
       - name: "开始"
         run: |
           npm install
-      - name: "执行签到等操作"
+      - name: "执行签到等操作1"
         run: |
           node ./a.js
 
